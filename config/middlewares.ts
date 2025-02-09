@@ -7,10 +7,10 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https://next-js-form-lac.vercel.app"],
-          "img-src": ["'self'", "data:", "blob:", "https://next-js-form-lac.vercel.app"],
-          "media-src": ["'self'", "data:", "blob:", "https://next-js-form-lac.vercel.app"],
-          "script-src": ["'self'", "'unsafe-inline'", "https://next-js-form-lac.vercel.app"],
+          "connect-src": ["'self'",  process.env.NEXT_PUBLIC_API_URL || "https://next-js-form-lac.vercel.app"],
+          "img-src": ["'self'", "data:", "blob:",  process.env.NEXT_PUBLIC_API_URL || "https://next-js-form-lac.vercel.app"],
+          "media-src": ["'self'", "data:", "blob:",  process.env.NEXT_PUBLIC_API_URL || "https://next-js-form-lac.vercel.app"],
+          "script-src": ["'self'", "'unsafe-inline'",  process.env.NEXT_PUBLIC_API_URL || "https://next-js-form-lac.vercel.app"],
         },
       },
     },
