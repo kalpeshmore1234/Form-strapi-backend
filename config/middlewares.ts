@@ -7,10 +7,10 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https://form-strapi-backend.onrender.com"],
-          "img-src": ["'self'", "data:", "blob:", "https://form-strapi-backend.onrender.com"],
-          "media-src": ["'self'", "data:", "blob:", "https://form-strapi-backend.onrender.com"],
-          "script-src": ["'self'", "'unsafe-inline'", "https://form-strapi-backend.onrender.com"],
+          "connect-src": ["'self'", "https://next-js-form-lac.vercel.app"],
+          "img-src": ["'self'", "data:", "blob:", "https://next-js-form-lac.vercel.app"],
+          "media-src": ["'self'", "data:", "blob:", "https://next-js-form-lac.vercel.app"],
+          "script-src": ["'self'", "'unsafe-inline'", "https://next-js-form-lac.vercel.app"],
         },
       },
     },
